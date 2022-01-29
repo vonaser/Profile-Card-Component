@@ -1,0 +1,101 @@
+
+*{
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-position: right 10rem bottom 25rem, left 10rem top 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+main{
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  width: 22rem;
+}
+
+h1, h2{
+  color: hsl(229, 23%, 23%);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h1{
+  margin-bottom: 1rem;
+}
+
+h2{
+  margin-bottom: .3rem;
+}
+.card-footer p{
+  font-size: .8rem;
+}
+
+span, p{
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+.background-pattern{
+  width: 100%;
+  z-index: -1;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -5rem auto 1rem auto;
+}
+
+.profile{
+  border-radius: 100%;
+  border: solid 4px hsl(0, 0%, 100%);
+  margin: 1rem 7.5rem;
+  z-index: 1;
+}
+
+.card-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 2rem 1rem 1.5rem auto;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 4rem;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px){
+  body{
+    background-position: right 25rem bottom 30rem, left 25rem top 30rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  body{
+    background-position: right 45rem bottom 10rem, left 45rem top 10rem;
+  }
+}
